@@ -1,6 +1,9 @@
 import express from "express";
+
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
+import env from "dotenv";
+env.config();
 import cors from "cors";
 const app = express();
 
