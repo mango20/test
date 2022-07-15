@@ -4,6 +4,9 @@
   "description": "",
   "type": "module",
   "main": "server.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "heroku-postbuild": "cd client && npm install && npm run build",
     "server": "nodemon server.js",
