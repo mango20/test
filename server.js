@@ -1,10 +1,13 @@
 import express from "express";
+
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
+import env from "dotenv";
+env.config();
 import cors from "cors";
 const app = express();
 
-const port = 5001;
+const port = process.env.PORT || 5001;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
